@@ -218,7 +218,7 @@ nodo* preOrden(nodo *raiz){
 	return raiz;
 }
 
-//Función que recorre el arbol en post orden, verificando los nodos adyacentes y fusionandolos
+//Función que recorre el arbol en pre orden, verificando los nodos adyacentes y fusionandolos
 int **llenarPreOrden(nodo *raiz, int **matriz, int region){
 	nodo *aux;
 	int i, j;
@@ -310,10 +310,3 @@ void procedimiento(FILE *archivo){
 	liberar(quadtree);
 }
 
-
-
-int main(){
-	FILE *archivo = fopen("Entrada.in", "r");
-	procedimiento(archivo);
-	return 0;
-}
